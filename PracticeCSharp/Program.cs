@@ -8,10 +8,11 @@ namespace PracticeCSharp
 {
     class Program
     {
-        static void Main()
-        {
-            Console.WriteLine("Hello World! This is first C# code");
-            Console.ReadLine();
-        }
+        //Programm commented out to run another program
+        //static void Main()
+        //{
+        //    Console.WriteLine("Hello World! This is first C# code");
+        //    Console.ReadLine();
+        //}
     }
 }
