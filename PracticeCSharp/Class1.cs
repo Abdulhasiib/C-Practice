@@ -10,21 +10,31 @@ namespace PracticeCSharp
     {
         static void Main()
         {
-            //Reading and Writing to Console Application
+            #region Reading & Writing to Console Application
+            /*
+            
             Console.WriteLine("Enter your First Name: ");
             string FirstName = Console.ReadLine();
 
             Console.WriteLine("Enter your Last Name: ");
             string LastName = Console.ReadLine();
+            */
+            #endregion
 
-            //Escape Sequence 
+            #region Escape Sequence & Verbatim Literal
+            /*
             Console.WriteLine("Hello! \nMr. {0} {1}", FirstName, LastName);
             
             //Escape Sequnce and Verbatim Literal
             string MyCSharpCodePath = @"C:\Users\muHtasib\source\repos\PracticeCSharp\PracticeCSharp";
             Console.WriteLine("Your C# Project path is \n{0}", MyCSharpCodePath);
 
-            //Nullable types
+            */
+            #endregion
+
+            #region Nullable types & null coalescinf operator
+
+            /*
             bool? IsMarried = null;
 
             if (IsMarried == true)
@@ -41,6 +51,7 @@ namespace PracticeCSharp
             }
 
             //null coalescinf operator
+
             int Income;
             int? Salary = null;
 
@@ -49,6 +60,71 @@ namespace PracticeCSharp
             Console.WriteLine("Your income is {0}", Income);
 
             Console.ReadLine();
+            */
+
+            #endregion
+
+            #region Datatype conversion
+            /*
+            //Implicit Conversion
+                int i = 123;
+
+                float f = i;
+
+                Console.WriteLine(i);
+
+                Console.ReadLine();
+            
+            //Explicit Conversion - Type cast operator
+                float fl = 123.45F;
+
+                int x = (int)fl;
+
+                Console.WriteLine(x);
+
+                Console.ReadLine();
+                
+            //Explicit Conversion - Convert Class
+
+                float fl1 = 123.45F;
+
+                int x1 = Convert.ToInt32(fl1);
+
+                Console.WriteLine(x1);
+
+                Console.ReadLine();
+                
+            //Parse
+
+                string number = "42572";
+
+                int n = int.Parse(number);
+
+                Console.WriteLine(n);
+
+                Console.ReadLine();
+                */
+
+            //Try Parse
+
+                string Alphanumber = "42572H";
+
+                int h = 0;
+
+                bool CheckParse = int.TryParse(Alphanumber,out h);
+
+                if (CheckParse)
+                {
+                    Console.WriteLine(h);
+                }
+                else
+                {
+                    Console.WriteLine("Conversion failed, Check number");
+                }
+
+                Console.ReadLine();
+
+            #endregion
         }
     }
 }
