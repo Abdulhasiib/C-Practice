@@ -106,7 +106,7 @@ namespace PracticeCSharp
                 */
 
             //Try Parse
-
+            /*
                 string Alphanumber = "42572H";
 
                 int h = 0;
@@ -123,6 +123,28 @@ namespace PracticeCSharp
                 }
 
                 Console.ReadLine();
+             */
+            #endregion
+
+            #region Arrays
+
+            string[] FamilyMembers = new string[8];
+
+            FamilyMembers[0] = "Father - M.A. Saleem";
+            FamilyMembers[1] = "Mother - Shabana Akhtar";
+            FamilyMembers[2] = "Son - M.A. Haseeb";
+            FamilyMembers[3] = "Wife - Hajra Haseeb";
+            FamilyMembers[4] = "Sister - Memona Firdos";
+            FamilyMembers[5] = "Sister - Sana Fatema";
+            FamilyMembers[6] = "Brother - Abdul Haq";
+            FamilyMembers[7] = "Sister - Saniya Almas";
+
+            for (int i = 0; i < FamilyMembers.Length; i++)
+            {
+                Console.WriteLine(FamilyMembers[i]);
+            }
+            
+            Console.ReadLine();
 
             #endregion
         }
