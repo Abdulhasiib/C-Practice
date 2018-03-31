@@ -139,11 +139,54 @@ namespace PracticeCSharp
             FamilyMembers[6] = "Brother - Abdul Haq";
             FamilyMembers[7] = "Sister - Saniya Almas";
 
+            /*
             for (int i = 0; i < FamilyMembers.Length; i++)
             {
                 Console.WriteLine(FamilyMembers[i]);
             }
-            
+            */
+
+            Console.WriteLine("Enter a number.");
+
+            int UserNumber = int.Parse(Console.ReadLine());
+
+            if (UserNumber == 0)
+            {
+                Console.WriteLine(FamilyMembers[0]);
+            }
+            else if (UserNumber == 1)
+            {
+                Console.WriteLine(FamilyMembers[1]);
+            }
+            else if (UserNumber == 2)
+            {
+                Console.WriteLine(FamilyMembers[2]);
+            }
+            else if (UserNumber == 3)
+            {
+                Console.WriteLine(FamilyMembers[3]);
+            }
+            else if (UserNumber == 4)
+            {
+                Console.WriteLine(FamilyMembers[4]);
+            }
+            else if (UserNumber == 5)
+            {
+                Console.WriteLine(FamilyMembers[5]);
+            }
+            else if (UserNumber == 6)
+            {
+                Console.WriteLine(FamilyMembers[6]);
+            }
+            else if (UserNumber == 7)
+            {
+                Console.WriteLine(FamilyMembers[7]);
+            }
+            else
+            {
+                Console.WriteLine("Sorry, No member matched against the number.");
+            }
+
             Console.ReadLine();
 
             #endregion
