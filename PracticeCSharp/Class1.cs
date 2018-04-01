@@ -10,13 +10,35 @@ namespace PracticeCSharp
     {
         static void Main()
         {
+            //Method, Array, Do While, Foreach Loop practice
+            /*
             Class1 Practice = new Class1();
 
             Practice.FamilyList();
+            */
+
+            //To test Parameter by value
+            /*
+            int TestParam = 50;
+
+            TestValueParameter(TestParam);
+
+            Console.WriteLine(TestParam);
+            */
+
+            //To test parameter by reference
+            int RefParam = 50;
+
+            TestReferenceParameter(ref RefParam);
+
+            Console.WriteLine(RefParam);
 
             Console.ReadLine();
         }
 
+        /// <summary>
+        /// To Test Method, Array, Do While, Foreach Loop practice
+        /// </summary>
         public void FamilyList()
         {
             int i = 0;
@@ -48,6 +70,9 @@ namespace PracticeCSharp
  
         }
 
+        /// <summary>
+        /// To practice basic C# features
+        /// </summary>
         public void GenericPractise()
         {
 
@@ -349,7 +374,25 @@ namespace PracticeCSharp
             Console.ReadLine();
             */
             #endregion
+            
+        }
 
+        /// <summary>
+        /// To test the paramter by value method
+        /// </summary>
+        /// <param name="TestParam"></param>
+        public static void TestValueParameter(int TestParam)
+        {
+                TestParam = TestParam * TestParam;
+        }
+
+        /// <summary>
+        /// To rest the parameter by reference method
+        /// </summary>
+        /// <param name="RefParam"></param>
+        public static void TestReferenceParameter(ref int RefParam)
+        {
+            RefParam = RefParam * RefParam;
         }
     }
 }
