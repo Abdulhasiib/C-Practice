@@ -10,6 +10,47 @@ namespace PracticeCSharp
     {
         static void Main()
         {
+            Class1 Practice = new Class1();
+
+            Practice.FamilyList();
+
+            Console.ReadLine();
+        }
+
+        public void FamilyList()
+        {
+            int i = 0;
+
+            Console.WriteLine("Enter total number of members in Family.");
+            int MemberCount = int.Parse(Console.ReadLine());
+
+            string[] FamilyMembers = new string[MemberCount];
+
+            do
+            {
+                Console.WriteLine("Enter Relation with member.");
+                string memberRelation = Console.ReadLine();
+
+                Console.WriteLine("Enter Name of Member.");
+                string memberName = Console.ReadLine();
+
+                FamilyMembers[i] = memberRelation + " - " + memberName;
+
+                i += 1;
+
+            } while (i < FamilyMembers.Length);
+            
+
+            foreach (string member in FamilyMembers)
+            {
+                Console.WriteLine(member);  
+            }
+ 
+        }
+
+        public void GenericPractise()
+        {
+
             #region Reading & Writing to Console Application
             /*
             
@@ -285,7 +326,7 @@ namespace PracticeCSharp
             #endregion
 
             #region foreach Loop
-
+            /*
             string[] FamilyMembers = new string[8];
 
             FamilyMembers[0] = "Father - M.A. Saleem";
@@ -306,8 +347,9 @@ namespace PracticeCSharp
             }
 
             Console.ReadLine();
+            */
+            #endregion
 
-            #endregion  
         }
     }
 }
