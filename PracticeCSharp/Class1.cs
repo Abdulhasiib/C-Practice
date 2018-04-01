@@ -127,7 +127,7 @@ namespace PracticeCSharp
             #endregion
 
             #region Arrays
-
+            /*
             string[] FamilyMembers = new string[8];
 
             FamilyMembers[0] = "Father - M.A. Saleem";
@@ -138,14 +138,7 @@ namespace PracticeCSharp
             FamilyMembers[5] = "Sister - Sana Fatema";
             FamilyMembers[6] = "Brother - Abdul Haq";
             FamilyMembers[7] = "Sister - Saniya Almas";
-
-            /*
-            for (int i = 0; i < FamilyMembers.Length; i++)
-            {
-                Console.WriteLine(FamilyMembers[i]);
-            }
-            */
-
+            
             Console.WriteLine("Enter a number.");
 
             int UserNumber = int.Parse(Console.ReadLine());
@@ -188,8 +181,72 @@ namespace PracticeCSharp
             }
 
             Console.ReadLine();
-
+            */
             #endregion
+
+            #region Switch Case
+
+            /*
+            string[] FamilyMembers = new string[8];
+
+            FamilyMembers[0] = "Father - M.A. Saleem";
+            FamilyMembers[1] = "Mother - Shabana Akhtar";
+            FamilyMembers[2] = "Son - M.A. Haseeb";
+            FamilyMembers[3] = "Wife - Hajra Haseeb";
+            FamilyMembers[4] = "Sister - Memona Firdos";
+            FamilyMembers[5] = "Sister - Sana Fatema";
+            FamilyMembers[6] = "Brother - Abdul Haq";
+            FamilyMembers[7] = "Sister - Saniya Almas";
+
+            Console.WriteLine("Enter a number.");
+
+            int UserNumber = int.Parse(Console.ReadLine());
+
+            switch (UserNumber)
+            {
+                case 0:
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                    Console.WriteLine("The Family member is {0}", FamilyMembers[UserNumber]);
+                    break;
+                default:
+                    Console.WriteLine("The number you entered doesn't corrospond to any data.");
+                    break;
+            }
+
+            Console.ReadLine();
+            */
+            #endregion
+
+            #region While Loop
+
+            string[] FamilyMembers = new string[8];
+
+            FamilyMembers[0] = "Father - M.A. Saleem";
+            FamilyMembers[1] = "Mother - Shabana Akhtar";
+            FamilyMembers[2] = "Son - M.A. Haseeb";
+            FamilyMembers[3] = "Wife - Hajra Haseeb";
+            FamilyMembers[4] = "Sister - Memona Firdos";
+            FamilyMembers[5] = "Sister - Sana Fatema";
+            FamilyMembers[6] = "Brother - Abdul Haq";
+            FamilyMembers[7] = "Sister - Saniya Almas";
+            
+            int UserNumber = 0;
+
+            while (UserNumber < FamilyMembers.Length)
+            {
+                Console.WriteLine(FamilyMembers[UserNumber]);
+
+                UserNumber += 1;
+            }
+
+            Console.ReadLine();
+            #endregion  
         }
     }
 }
