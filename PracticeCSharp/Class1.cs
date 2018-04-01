@@ -250,7 +250,7 @@ namespace PracticeCSharp
             #endregion
 
             #region Do While Loop
-
+            /*
             string[] FamilyMembers = new string[8];
 
             FamilyMembers[0] = "Father - M.A. Saleem";
@@ -281,8 +281,33 @@ namespace PracticeCSharp
             } while (UserNumber < FamilyMembers.Length);
 
             Console.ReadLine();
-
+            */
             #endregion
+
+            #region foreach Loop
+
+            string[] FamilyMembers = new string[8];
+
+            FamilyMembers[0] = "Father - M.A. Saleem";
+            FamilyMembers[1] = "Mother - Shabana Akhtar";
+            FamilyMembers[2] = "Son - M.A. Haseeb";
+            FamilyMembers[3] = "Wife - Hajra Haseeb";
+            FamilyMembers[4] = "Sister - Memona Firdos";
+            FamilyMembers[5] = "Sister - Sana Fatema";
+            FamilyMembers[6] = "Brother - Abdul Haq";
+            FamilyMembers[7] = "Sister - Saniya Almas";
+
+            int i = 0;
+
+            foreach (string k in FamilyMembers)
+            {
+                Console.WriteLine(FamilyMembers[i]);
+                i += 1;
+            }
+
+            Console.ReadLine();
+
+            #endregion  
         }
     }
 }
