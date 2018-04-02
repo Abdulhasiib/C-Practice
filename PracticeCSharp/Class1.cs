@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MemberClass;
 
 namespace PracticeCSharp
 {
@@ -27,12 +28,19 @@ namespace PracticeCSharp
             */
 
             //To test parameter by reference
+            /*
             int RefParam = 50;
 
             TestReferenceParameter(ref RefParam);
 
             Console.WriteLine(RefParam);
+            */
 
+            //To use Namespace, class reference from different project
+                Member MyFamilyMember = new Member("Mohammed", "Saleem", 57, "Father");
+
+                MyFamilyMember.PrintMember();
+            
             Console.ReadLine();
         }
 
