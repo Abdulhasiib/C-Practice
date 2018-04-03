@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MemberClass;
+using PracticeCSharp;
 
 namespace PracticeCSharp
 {
@@ -37,9 +38,18 @@ namespace PracticeCSharp
             */
 
             //To use Namespace, class reference from different project
+            /*
                 Member MyFamilyMember = new Member("Mohammed", "Saleem", 57, "Father");
 
                 MyFamilyMember.PrintMember();
+
+            */
+
+            Circle myCircle = new Circle(13);
+
+            float AreaOfmyCircle = myCircle.AreaOfCircle();
+
+            Console.WriteLine("Area of Circle is {0}", AreaOfmyCircle);
             
             Console.ReadLine();
         }
