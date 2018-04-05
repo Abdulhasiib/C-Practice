@@ -45,12 +45,22 @@ namespace PracticeCSharp
 
             */
 
+            //To use static and instance methods
+            /*
             Circle myCircle = new Circle(13);
 
             float AreaOfmyCircle = myCircle.AreaOfCircle();
 
             Console.WriteLine("Area of Circle is {0}", AreaOfmyCircle);
-            
+            */
+
+            Phone myPhone = new Phone();
+            Console.WriteLine(myPhone.PrintPhone());
+
+            Computer myCmputer = new Computer();
+            Console.WriteLine(myCmputer.PrintComputer());
+
+
             Console.ReadLine();
         }
 
