@@ -11,20 +11,20 @@ namespace PracticeCSharp
         string pNetwork;
         string pPhoneInfo;
 
-        public string PrintPhone()
+        public void PrintPhone()
         {
-            string pDeviceInfo = this.PrintDevice();
+            //string pDeviceInfo = this.PrintDevice();
 
             Console.WriteLine("Enter Network Type: 3G/4G");
             this.pNetwork = Console.ReadLine();
             
-            return this.pPhoneInfo = pDeviceInfo + " " + this.pNetwork;
         }
 
-        public new void DeviceInfo()
+        public override void DeviceInfo()
         {
-            Console.WriteLine("This is a Phone class");
-            base.DeviceInfo();
+            this.PrintPhone();
+            Console.WriteLine("This is a Phone - {0} ", this.pNetwork);
+            //base.DeviceInfo();
         }
     }
 }

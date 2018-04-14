@@ -66,6 +66,7 @@ namespace PracticeCSharp
             //To use method hiding in C#
 
             //New keyword identifier and base.method
+            /*
             Phone myPhone = new Phone();
             myPhone.DeviceInfo();
 
@@ -75,7 +76,20 @@ namespace PracticeCSharp
             //Reference variable of Parent class pointing to child object
             BaseClass myDevice = new Phone();
             myDevice.DeviceInfo();
+            */
 
+            //To use polymorphism in C#
+            BaseClass[] myGadget = new BaseClass[3];
+
+            myGadget[0] = new BaseClass();
+            myGadget[1] = new Phone();
+            myGadget[2] = new Computer();
+
+            foreach (var device in myGadget)
+            {
+                device.DeviceInfo();
+            }
+ 
             Console.ReadLine();
         }
 

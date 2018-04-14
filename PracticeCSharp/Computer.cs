@@ -9,16 +9,21 @@ namespace PracticeCSharp
     class Computer : BaseClass
     {
         string pDrive;
-        string pComputerInfo;
+        
 
-        public string PrintComputer()
+        public void PrintComputer()
         {
-            string pDeviceInfo = this.PrintDevice();
+            //string pDeviceInfo = this.PrintDevice();
 
             Console.WriteLine("Enter Drive Type: SSD/HDD");
             this.pDrive = Console.ReadLine();
             
-            return this.pComputerInfo = pDeviceInfo + " " + this.pDrive;
+        }
+
+        public override void DeviceInfo()
+        {
+            this.PrintComputer();
+            Console.WriteLine("This is Computer - {0}", this.pDrive);
         }
     }
 }
