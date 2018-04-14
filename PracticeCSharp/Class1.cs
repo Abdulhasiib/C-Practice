@@ -54,12 +54,27 @@ namespace PracticeCSharp
             Console.WriteLine("Area of Circle is {0}", AreaOfmyCircle);
             */
 
+            //To use Inheritance in C#
+            /*
             Phone myPhone = new Phone();
             Console.WriteLine(myPhone.PrintPhone());
 
             Computer myCmputer = new Computer();
             Console.WriteLine(myCmputer.PrintComputer());
+            */
 
+            //To use method hiding in C#
+
+            //New keyword identifier and base.method
+            Phone myPhone = new Phone();
+            myPhone.DeviceInfo();
+
+            //Type cast method hiding
+            ((BaseClass)myPhone).DeviceInfo();
+
+            //Reference variable of Parent class pointing to child object
+            BaseClass myDevice = new Phone();
+            myDevice.DeviceInfo();
 
             Console.ReadLine();
         }

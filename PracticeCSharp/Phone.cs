@@ -20,5 +20,11 @@ namespace PracticeCSharp
             
             return this.pPhoneInfo = pDeviceInfo + " " + this.pNetwork;
         }
+
+        public new void DeviceInfo()
+        {
+            Console.WriteLine("This is a Phone class");
+            base.DeviceInfo();
+        }
     }
 }

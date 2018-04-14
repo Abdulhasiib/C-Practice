@@ -36,5 +36,10 @@ namespace PracticeCSharp
 
             return pDeviceInfo;
         }
+
+        public void DeviceInfo()
+        {
+            Console.WriteLine("This is the base device");
+        }
     }
 }
