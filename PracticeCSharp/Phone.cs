@@ -9,7 +9,7 @@ namespace PracticeCSharp
     class Phone : BaseClass
     {
         string pNetwork;
-        string pPhoneInfo;
+        
 
         public void PrintPhone()
         {

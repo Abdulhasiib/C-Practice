@@ -79,6 +79,7 @@ namespace PracticeCSharp
             */
 
             //To use polymorphism in C#
+            /*
             BaseClass[] myGadget = new BaseClass[3];
 
             myGadget[0] = new BaseClass();
@@ -89,8 +90,33 @@ namespace PracticeCSharp
             {
                 device.DeviceInfo();
             }
+            */
+
+            //To practice method overloading in C#
+            int sum1 = AddNumbers(6768734, 767863274);
+
+            int sum2 = AddNumbers(32434, 345435, 879087);
+
+            double sum3 = AddNumbers(677.30, 454354);
+
+            Console.WriteLine("Sum of first method = {0} and sum of second method = {1} and sum of third method = {2}", sum1.ToString() , sum2.ToString(), sum3.ToString());
  
             Console.ReadLine();
+        }
+
+        public static int AddNumbers(int FN, int SN)
+        {
+            return FN + SN;
+        }
+
+        public static int AddNumbers(int FN, int SN, int TN)
+        {
+            return FN + SN + TN;
+        }
+
+        public static double AddNumbers(double FN, int SN)
+        {
+            return FN + SN;
         }
 
         /// <summary>
